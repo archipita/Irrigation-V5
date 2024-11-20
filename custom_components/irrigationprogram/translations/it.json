@@ -1,86 +1,86 @@
 {
     "services":{
 		"stop_programs":{
-			"name": "Stop programs",
-			"description": "Stop any running programs and zones."
+			"name": "Blocca programmi",
+			"description": "Blocca qualsiasi programma e zona."
 		},
 		"list_config":{
-			"name": "List Configuration",
-			"description": "List out configuration to the log file"
+			"name": "Elenca configurazione",
+			"description": "Elenca la configurazione nel file log."
 		},
 		"run_zone":{
-			"name": "Run zone",
-			"description": "Run a specific zone.",
+			"name": "Attiva zona",
+			"description": "Attiva il programma per una zona specifica.",
 			"fields": {
 				"entity_id": {
-					"name": "Irrigation Program",
-					"description": "The irrigation program to run"
+					"name": "Programma irrigazione",
+					"description": "Il programma di irrigazione da attivare."
 				},
 				"zone": {
-					"name": "Zone",
-					"description": "Zones to run"
+					"name": "Zona",
+					"description": "Zona da attivare"
 				}
 			}
 		},
 		"toggle_zone":{
-			"name": "Toggle zone",
-			"description": "Run a specific zone.",
+			"name": "Attiva/disattiva zona",
+			"description": "Attiva/disattiva una zona specifica.",
 			"fields": {
 				"entity_id": {
-					"name": "Irrigation Program",
-					"description": "The irrigation program to run"
+					"name": "Programma irrigazione",
+					"description": "Il programma di irrigazione da attivare/disattivare."
 				},
 				"zone": {
-					"name": "Zone",
-					"description": "Zones to run"
+					"name": "Zona",
+					"description": "Zona da attivare/disattivare."
 				}
 			}
 		},
 		"reset_runtime":{
-			"name": "Reset runtimes",
-			"description": "Reset the runtime back to none for the program supports testing.",
+			"name": "Reimpostare tempo esecuzione",
+			"description": "Reimpostare il tempo di esecuzione del programma.",
 			"fields": {
 				"entity_id": {
-					"name": "Irrigation Program",
-					"description": "The irrigation program to run"
+					"name": "Programma irrigazione",
+					"description": "Il programma di irrigazione da attivare."
 				},
 				"reset": {
-					"name": "Reset days",
-					"description": "Number of days to back date the last ran attribute"
+					"name": "Reimposta giorni",
+					"description": "Numero di giorni antecedenti all'ultima esecuzione."
 				}
 			}
 		},
 		"run_simulation":{
-			"name": "Run Simulation",
-			"description": "Simulate running a program. The results are shown in the log.",
+			"name": "Attiva simulazione",
+			"description": "Simula l'attivazione di un programma. I risultati sono mostrati nel log.",
 			"fields": {
 				"entity_id": {
-					"name": "Irrigation Program",
-					"description": "The irrigation program to run"
+					"name": "Programma irrigazione",
+					"description": "Il programma di irrigazione da attivare."
 				},
 				"scheduled": {
-					"name": "Scheduled",
-					"description": "Scheduled (true) or manual (false) execution simulation"
+					"name": "Programmata",
+					"description": "Simulazione dell'esecuzione programmata (vero) o manuale (falso)."
 				}
 			}
 		},
 		"set_zone_status":{
-			"name": "Set zone status",
-			"description": "Set the zone status",
+			"name": "Imposta stato zona",
+			"description": "Imposta lo stato della zona.",
 			"fields": {
 				"entity_id": {
-					"name": "Irrigation zone status sensor",
-					"description": "The zone sensor to set"
+					"name": "Entità stato zona irrigazione",
+					"description": "L'entità dello stato della zona di irrigazione da impostare."
 				}
 			}
 		},
 		"toggle":{
-			"name": "Toggle config sensor",
-			"description": "Toggle configuration",
+			"name": "Attiva/disattiva configurazione",
+			"description": "Attiva/disattiva la configurazione.",
 			"fields": {
 				"entity_id": {
-					"name": "Irrigation zone config sensor",
-					"description": "The zone config sensor to toggle"
+					"name": "Entità configurazione zona irrigazione",
+					"description": "L'entità della configurazione da attivare/disattivare."
 				}
 			}
 		}
@@ -90,21 +90,21 @@
 			"options": {
 				"off": "Off",
 				"on": "On",
-				"disabled": "Disabled",
-				"pending": "Pending",
+				"disabled": "Disabilitato",
+				"pending": "In attesa",
 				"eco": "ECO",
-				"program_disabled": "Program disabled",
-				"controller_disabled": "Controller disabled",
-				"unavailable": "Unavailable",
-				"raining": "Raining",
-				"adjusted_off": "Adjusted off",
-				"no_water_source": "No water source detected",
-				"zone_disabled": "Disabled"
+				"program_disabled": "Programma disabilitato",
+				"controller_disabled": "Controllore disabilitato",
+				"unavailable": "Non disponibile",
+				"raining": "Pioggia",
+				"adjusted_off": "Corretto",
+				"no_water_source": "Nessuna entità di irrigazione rilevata",
+				"zone_disabled": "Disabilitata"
 			}
 		},
 		"device_type": {
 			"options": {
-				"generic": "Generic",
+				"generic": "Generico",
 				"rainbird": "RainBird"
 			}
 		}
@@ -116,16 +116,16 @@
 				"state": {
 					"off": "Off",
 					"on": "On",
-					"disabled": "Disabled",
-					"pending": "Pending",
+					"disabled": "Disabilitato",
+					"pending": "In attesa",
 					"eco": "ECO",
-					"program_disabled": "Program disabled",
-					"controller_disabled": "Controller disabled",
-					"unavailable": "Unavailable",
-					"raining": "Raining",
-					"adjusted_off": "Adjusted off",
-					"no_water_source": "No water source detected",
-					"zone_disabled": "Disabled"
+					"program_disabled": "Programma disabilitato",
+					"controller_disabled": "Controllore disabilitato",
+					"unavailable": "Non disponibile",
+					"raining": "Piogga",
+					"adjusted_off": "Corretto",
+					"no_water_source": "Nessuna entità di irrigazione rilevata",
+					"zone_disabled": "Disabilitata"
 				}
 			}
 		}
@@ -154,7 +154,7 @@
 			},
 			"zones": {
 				"title": "Programmazione zone",
-				"description": "Configurazione zone",
+				"description": "Configurazione delle zone.",
 				"data": {
 					"zone": "Entità interruttore zona",
 					"pump": "Entità interruttore pompa",
@@ -192,15 +192,15 @@
 
  	"options": {
 		"error": {
-			"zone_defined": "La zona specificata è già stata definita in questo programma di irrigazione",
-			"group_define": "Il nome del gruppo scelto è stato già utilizzato",
-			"two_zones_required": "Almeno due zone sono necessarie per creare un gruppo",
-			"mandatory": "Il campo richiesto non è stato riempito",
-			"zone_required": "Deve essere definita almeno una zona"
+			"zone_defined": "La zona specificata è già stata definita in questo programma di irrigazione.",
+			"group_define": "Il nome del gruppo scelto è stato già utilizzato.",
+			"two_zones_required": "Almeno due zone sono necessarie per creare un gruppo.",
+			"mandatory": "Il campo richiesto non è stato riempito.",
+			"zone_required": "Deve essere definita almeno una zona."
 		},
 		"step": {
 			"user": {
-				"description": "Se una zona è cancellata o l'interruttore di una zona è modificato, il relativo gruppo verrà cancellato",
+				"description": "Se una zona è cancellata o l'interruttore di una zona è modificato, il relativo gruppo verrà cancellato.",
 				"menu_options": {
 					"update_program": "Aggiorna opzioni programma",
 					"update_zone": "Aggiorna opzioni zona",
@@ -213,7 +213,7 @@
 			},
 			"update_program": {
 				"title": "Dati programma",
-				"description": "Aggiorna programma irrigazione",
+				"description": "Aggiorna programma di irrigazione.",
 				"data": {
 						"run_freq": "Entità frequenza esecuzione",
 						"controller_monitor": "Entità monitoraggio controllore",
@@ -227,7 +227,7 @@
 			},
 			"add_zone": {
 				"title": "Configuratione zone",
-				"description": "Definizione zone",
+				"description": "Definizione delle zone.",
 				"data": {
 					"zone": "Entità interruttore zona",
 					"pump": "Entità interruttore pompa",
@@ -247,7 +247,7 @@
 			},
 			"update_zone_data": {
 				"title": "Configuratione zone",
-				"description": "Definizione zone",
+				"description": "Definizione delle zone.",
 				"data": {
 					"zone": "Entità interruttore zona",
 					"pump": "Entità interruttore pompa",
